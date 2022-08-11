@@ -1,0 +1,40 @@
+{
+  "name": "pharmacy",
+  "version": "0.0.0",
+  "private": true,
+  "nodemonConfig": {
+    "watch": [
+      "app",
+      "**/*.js",
+      "./bin/www",
+      "./src/**/*.js"
+    ],
+    "ext": "ts",
+    "ignore": [
+      "*.test.ts"
+    ],
+    "delay": 3,
+    "execMap": {
+      "ts": "ts-node"
+    }
+  },
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "express": "~4.16.1",
+    "morgan": "~1.9.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1",
+    "sequelize": "^6.21.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.21.0"
+  }
+}
